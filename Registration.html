@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <link href="style.CSS" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="background-color: lightblue;">
+<h2>
+Registration Form
+</h2>
+<p>
+Enter your details below
+</p>
+  <form method="post" target="_blank">
+    <div>
+        <ul class="ull">
+            <li class="li1">
+                <input type="Email" required placeholder="Email"
+value="your_email@gmail.com" name="email" autofocus />
+            </li>
+        </ul>
+    </div>
+       <ul>
+        <li class="li2">
+            <input type="password" required placeholder="password"
+name="password" minlength="8" maxlength="20" />
+        </li>
+       </ul>
+       <h5>
+        <i>
+            <p>!Type a complex password with 8-20 characteristics.</p>
+        </i>
+       </h5>
+       <div>
+        <ul>
+            <li class="li3">
+                <input type="number" required placeholder="+20 phone number"
+name="phone number" />
+            </li>
+        </ul>
+       </div>
+       <hr />
+       <h4>
+        <i>
+            <p>Enter your profession:</p>
+        </i>
+       </h4>
+       <ul>
+        <li class="li4">
+            <input id="student" type="radio" , name="profession" , value="student"
+/>
+        <label for="student">student</label>
+            <input id="Teacher" type="radio" , name="profession" , value="Teacher"
+/>
+         <label for="Teacher">Teacher</label>
+        <input id="Developer" type="radio" , name="profession" value="Developer"
+/>
+        <label for="Developer">Developer</label>            
+        </li>
+       </ul>
+       <label for="stage">choose the stage if you are (student)</label>
+       <select name="stage" id="stage">
+        <optgroup label="primary stage">
+          <option value="first primary">first primary</option>
+          <option value="second primary">second primary</option>
+          <option value="third primary">third primary</option>
+          <option value="fourth primary">fourth primary</option>
+          <option value="fifth primary">fifth primary</option>
+          <option value="sixth primary">sixth primary</option>
+        </optgroup>
+        <optgroup label="prepadatory stage">
+          <option value="first prepadatory">first prepadatory</option>
+          <option value="second prepadatory">second prepadatory</option>
+          <option value="third prepadatory">third prepadatory</option>
+        </optgroup>
+        <optgroup label="secondary stage">
+          <option value="first secondary"></option>
+          <option value="second secondary"></option>
+          <option value="third secondary"></option>
+        </optgroup>
+       </select>
+       <hr />
+       <ul>
+        <li class="li5">
+            <label  for="d">Enter your birth date.</label>
+            <input type="date" name="date" id="d" />
+        </li>
+       </ul>
+       <hr />
+       <div>
+        <ul>
+            <li class="li6">
+              <input type="text" placeholder="Any notes" name="Notes" />
+            </li>
+        </ul>
+       </div>
+       <hr />
+       <input type="submit" />
+       <input type="reset" value="reset" />
+  </form>
+</body>
+
+</html>
